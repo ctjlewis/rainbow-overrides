@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc",
     "write": "node scripts/write.mjs",
-    "pre-commit": "yarn write && git stage --all"
+    "pre-commit": "yarn write && git add --all && git stage --all"
   },
   "dependencies": {
     "glob": "^7.1.7"
