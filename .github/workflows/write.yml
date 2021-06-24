@@ -20,6 +20,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '14.x'
+      - run: yarn
       - name: Update Override List
         run: yarn write
       - name: Commit updated Override List
