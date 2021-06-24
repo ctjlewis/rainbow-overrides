@@ -2,14 +2,14 @@
   "name": "token-overrides",
   "version": "1.0.0",
   "type": "module",
-  "module": "dist/compile.js",
+  "module": "dist/index.js",
   "repository": "git@github.com:ctjlewis/token-overrides.git",
   "author": "Christian Lewis <1657236+ctjlewis@users.noreply.github.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
     "build": "tsc",
-    "write": "node dist/write.js"
+    "write": "node scripts/write.mjs"
   },
   "dependencies": {
     "glob": "^7.1.7"
