@@ -1,6 +1,7 @@
 name: Write updated Override List
 
 on:
+  push: {}
   schedule:
     - cron: "0 * * * *"
 
