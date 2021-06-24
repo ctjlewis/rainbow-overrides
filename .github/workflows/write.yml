@@ -2,6 +2,9 @@ name: Write updated Override List
 
 # Whenever any JSON file in tokens/ is modified, rebuild the JSON file in root
 on:
+  pull_request:
+    branches:
+      - master
   push:
     branches:
       - master
