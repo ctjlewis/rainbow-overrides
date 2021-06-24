@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc",
     "write": "node scripts/write.mjs",
-    "pre-push": "yarn write"
+    "pre-push": "yarn write && git commit -m 'chore: built updated overrides JSON'"
   },
   "dependencies": {
     "glob": "^7.1.7"
