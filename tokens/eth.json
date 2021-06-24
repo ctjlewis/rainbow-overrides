@@ -1,0 +1,9 @@
+{
+  "address": "eth",
+  "decimals": 18,
+  "isRainbowCurated": true,
+  "isVerified": true,
+  "name": "Ethereum",
+  "symbol": "ETH",
+  "uniqueId": "eth"
+}

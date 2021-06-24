@@ -1,0 +1,24 @@
+name: Write updated Override List
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - uses: c-hive/gha-yarn-cache@v1
+      - run: yarn
+      - name: Update Override List
+        run: yarn write
+      - name: Commit updated Override List
+        run: "git config --global user.name '${{github.actor}}' && \
+              git config --global user.email '${{github.actor}}@users.noreply.github.com' && \
+              git add -A && git commit -m 'Updated Override List' && \
+              git push -u origin api"
