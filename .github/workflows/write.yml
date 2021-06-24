@@ -6,6 +6,7 @@ on:
     branches:
       - master
     paths:
+      - package.json
       - tokens/**.json
   # schedule:
   #   - cron: "0 * * * *"
