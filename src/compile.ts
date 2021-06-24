@@ -1,13 +1,29 @@
 import glob from 'glob'
 import { promises as fs } from 'fs'
+import type { OverrideToken } from 'rainbow-token-list-test'
+import { defaultOverrides } from './data/default-overrides.js';
 
-const overrideFiles = glob.sync('tokens/**/*.json');
-const overridePromises = overrideFiles.map(
-  async (overrideFile) => {
-    return JSON.parse(
+export const getOverrides = async () => {
+  const overrides: { [address: string]: OverrideToken } = {};
+  const overrideFiles = glob.sync('tokens/**/*.json');
+
+  for (const overrideFile of overrideFiles) {
+    const rawOverride = JSON.parse(
       await fs.readFile(overrideFile, 'utf-8')
     );
+    /**
+     * Each override is indexed by its address, i.e.: 
+     *
+     * { '0x123...': { color: ... }, ... }
+     */
+    const { address, ...overrideData } = rawOverride;
+    overrides[address] = overrideData;
   }
-);
 
-export const overrides = await Promise.all(overridePromises);
+  return {
+    ...defaultOverrides,
+    ...overrides,
+  };
+}
+
+// export const overrides = await Promise.all(overridePromises);

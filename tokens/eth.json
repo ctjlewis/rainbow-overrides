@@ -1,9 +1,7 @@
 {
   "address": "eth",
-  "decimals": 18,
-  "isRainbowCurated": true,
+  "isCurated": true,
   "isVerified": true,
-  "name": "[TEST-113] Ethereum",
-  "symbol": "ETH",
-  "uniqueId": "eth"
+  "name": "[TEST] Ethereum",
+  "symbol": "ETH"
 }
