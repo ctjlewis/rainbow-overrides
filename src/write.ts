@@ -3,7 +3,7 @@ import { overrides } from './compile.js'
 
 export const write = async () => {
   await fs.writeFile(
-    'dist/rainbow-token-overrides.json',
+    'rainbow-token-overrides.json',
     JSON.stringify(overrides)
   );
 }
