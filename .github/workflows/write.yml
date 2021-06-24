@@ -1,7 +1,6 @@
 name: Write updated Override List
 
 # Whenever any JSON file in tokens/ is modified, rebuild the JSON file in root
-# and commit.
 on:
   push:
     branches:
@@ -20,6 +19,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '14.x'
+      - uses: c-hive/gha-yarn-cache@v1
       - run: yarn
       - name: Update Override List
         run: yarn write
