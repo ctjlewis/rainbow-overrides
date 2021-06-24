@@ -4,14 +4,13 @@
   "type": "module",
   "module": "dist/index.js",
   "repository": "git@github.com:ctjlewis/token-overrides.git",
-  "author": "Christian Lewis <1657236+ctjlewis@users.noreply.github.com>",
+  "author": "C. Lewis <ctj.lewis@icloud.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
     "build": "tsc",
     "write": "node scripts/write.mjs",
-    "stage": "git add --all && git stage --all",
-    "pre-push": "yarn write && yarn stage && (git commit -m 'chore: built updated overrides JSON' || true)"
+    "pre-commit": "yarn write && git stage --all"
   },
   "dependencies": {
     "glob": "^7.1.7"
