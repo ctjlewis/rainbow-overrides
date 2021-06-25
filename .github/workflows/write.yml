@@ -1,12 +1,16 @@
 name: Write updated Override List
 
-# Whenever any JSON file in tokens/ is modified, rebuild the JSON file in root
+# When any default override, or custom override in tokens/, is modified, re-emit
+# JSON. Also trigger when package.json is edited.
 on:
   push:
     branches:
       - master
     paths:
       - package.json
+      # default overrides
+      - src/data/default-overrides.ts
+      # custom overrides
       - tokens/**.json
   # schedule:
   #   - cron: "0 * * * *"
