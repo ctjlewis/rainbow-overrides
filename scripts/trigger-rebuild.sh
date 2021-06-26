@@ -7,4 +7,4 @@ curl -X POST \
   -H "Accept: application/vnd.github.v3+json" \
   -H "Content-Type: application/json" \
   -d '{"ref": "service-compatibility"}' \
-  https://api.github.com/repos/$REPO/actions/workflows/write.yaml/dispatches
+  https://api.github.com/repos/$REPO/actions/workflows/write.yml/dispatches
