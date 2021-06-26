@@ -1,4 +1,4 @@
-import { promises as fs } from 'fs'
+import { promises as fs } from 'fs';
 import { getOverrides } from './compile.js';
 
 export const write = async () => {
@@ -7,4 +7,4 @@ export const write = async () => {
     'rainbow-overrides.json',
     JSON.stringify(overrides, null, 2)
   );
-}
+};

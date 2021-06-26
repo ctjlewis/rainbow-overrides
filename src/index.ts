@@ -1,2 +1,2 @@
-export * from './compile'
-export * from './write'
+export * from './compile';
+export * from './write';

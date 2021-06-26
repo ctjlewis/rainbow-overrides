@@ -1,2 +1,2 @@
-import { write } from "../dist/write.js";
+import { write } from "../dist/rainbow-overrides.esm.js";
 write();
