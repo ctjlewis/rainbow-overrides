@@ -13,3 +13,7 @@ import it via:
 ```ts
 import rainbowOverrides from 'rainbow-overrides/rainbow-overrides.json'
 ```
+
+### Development
+First, set up the Husky hooks with `yarn install-husky`. To push a new version
+of the Token List manually, just run `git commit`.
