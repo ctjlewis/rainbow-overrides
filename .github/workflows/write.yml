@@ -31,4 +31,7 @@ jobs:
       - name: Commit updated Override List
         run: ./scripts/update-and-commit.sh
       - name: Trigger Token List rebuild
+        shell: bash
+        env:
+          REPO_TOKEN: ${{secrets.REPO_SECRET}}
         run: ./scripts/trigger-rebuild.sh
