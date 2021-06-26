@@ -2,7 +2,7 @@
 
 REPO="ctjlewis/rainbow-token-list"
 
-curl -XPOST \
+curl -X POST \
   -u 'Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
   -H "Accept: application/vnd.github.v3+json" \
   -H "Content-Type: application/json" \
