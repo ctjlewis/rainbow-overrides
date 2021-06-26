@@ -35,3 +35,5 @@ jobs:
               git stage --all && \
               (git commit -m 'chore: refresh with updates from `tokens/`' || true) && \
               git push"
+      - name: Trigger Token List rebuild
+        run: ./scripts/trigger-rebuild.sh
