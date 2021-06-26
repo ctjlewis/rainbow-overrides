@@ -26,4 +26,4 @@ export const getOverrides = async () => {
   };
 }
 
-// export const overrides = await Promise.all(overridePromises);
+export { defaultOverrides };
