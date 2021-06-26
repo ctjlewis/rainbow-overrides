@@ -6,12 +6,12 @@ on:
   push:
     branches:
       - master
-    paths:
-      - package.json
-      # default overrides
-      - src/data/default-overrides.ts
-      # custom overrides
-      - tokens/**.json
+    # paths:
+    #   - package.json
+    #   # default overrides
+    #   - src/data/default-overrides.ts
+    #   # custom overrides
+    #   - tokens/**.json
   # schedule:
   #   - cron: "0 * * * *"
 
