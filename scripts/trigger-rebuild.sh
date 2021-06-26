@@ -3,7 +3,7 @@
 REPO="ctjlewis/rainbow-token-list"
 
 curl -X POST \
-  -u ctjlewis:$REPO_TOKEN \
+  -H "Authorization: token $REPO_TOKEN"
   -H "Accept: application/vnd.github.v3+json" \
   -H "Content-Type: application/json" \
   -d '{"ref": "service-compatibility"}' \
