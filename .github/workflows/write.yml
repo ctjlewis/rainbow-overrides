@@ -33,5 +33,6 @@ jobs:
       - name: Trigger Token List rebuild
         shell: bash
         env:
+          USERNAME: ${{github.actor}}
           REPO_TOKEN: ${{secrets.REPO_TOKEN}}
         run: ./scripts/trigger-rebuild.sh
