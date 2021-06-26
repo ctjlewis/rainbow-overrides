@@ -1,6 +1,6 @@
 {
   "name": "rainbow-overrides",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "type": "module",
   "module": "dist/rainbow-overrides.esm.js",
   "typings": "dist/index.d.ts",
@@ -9,6 +9,10 @@
     "src",
     "rainbow-overrides.json"
   ],
+  "exports": {
+    "rainbow-overrides": "./dist/rainbow-overrides.esm.js",
+    "rainbow-overrides/offline-overrides": "./rainbow-overrides.json"
+  },
   "engines": {
     "node": ">=14"
   },
