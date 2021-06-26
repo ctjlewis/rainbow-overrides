@@ -33,5 +33,5 @@ jobs:
       - name: Trigger Token List rebuild
         shell: bash
         env:
-          REPO_TOKEN: ${{secrets.REPO_SECRET}}
+          REPO_TOKEN: ${{secrets.REPO_TOKEN}}
         run: ./scripts/trigger-rebuild.sh
