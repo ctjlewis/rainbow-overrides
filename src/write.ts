@@ -5,6 +5,6 @@ export const write = async () => {
   const overrides = await getOverrides();
   await fs.writeFile(
     'rainbow-token-overrides.json',
-    JSON.stringify(overrides)
+    JSON.stringify(overrides, null, 2)
   );
 }
