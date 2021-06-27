@@ -28,8 +28,14 @@ jobs:
       - run: yarn
       - name: Update Override List
         run: yarn write
-      - name: Commit updated Override List
-        run: ./scripts/update-and-commit.sh
+      - name: Configure Git
+        run: "git config --global user.name '${{github.actor}}' && \
+              git config --global user.email '${{github.actor}}@users.noreply.github.com'"
+      - name: Commit updated Token List
+        run: "git add --all && \
+              git stage --all && \
+              git commit -m 'auto: update Token List from sources, overrides' && \
+              git push -u origin HEAD"
       - name: Trigger Token List rebuild
         shell: bash
         env:
