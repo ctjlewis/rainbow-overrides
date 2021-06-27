@@ -34,7 +34,8 @@ jobs:
       - name: Commit updated Token List
         run: "git add --all && \
               git stage --all && \
-              git commit -m 'auto: update Token List from sources, overrides' && \
+              (git commit -m 'auto: update Token List from sources, overrides'
+              || true) && \
               git push -u origin HEAD"
       - name: Trigger Token List rebuild
         shell: bash
