@@ -1,8 +1,9 @@
 {
   "name": "rainbow-overrides",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "type": "module",
   "module": "dist/rainbow-overrides.esm.js",
+  "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
@@ -27,7 +28,7 @@
     "trailingComma": "es5"
   },
   "scripts": {
-    "build": "tsdx build --format esm",
+    "build": "tsdx build",
     "write": "yarn build && node scripts/write.js"
   },
   "dependencies": {
