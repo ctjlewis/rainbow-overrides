@@ -28,7 +28,7 @@
   },
   "scripts": {
     "build": "tsdx build --format esm",
-    "write": "yarn build && node scripts/write.mjs"
+    "write": "yarn build && node scripts/write.js"
   },
   "dependencies": {
     "glob": "^7.1.7",
