@@ -1,19 +1,17 @@
 {
   "name": "rainbow-overrides",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "type": "module",
   "module": "dist/rainbow-overrides.esm.js",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
-    "src",
-    "rainbow-overrides.json"
+    "src"
   ],
   "exports": {
     ".": "./dist/rainbow-overrides.esm.js",
-    "./package.json": "./package.json",
-    "./offline-overrides": "./rainbow-overrides.json"
+    "./package.json": "./package.json"
   },
   "engines": {
     "node": ">=14"
