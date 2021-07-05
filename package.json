@@ -29,7 +29,8 @@
   "scripts": {
     "build": "tsdx build",
     "write": "yarn build && node scripts/write.js",
-    "postwrite": "yarn build"
+    "postwrite": "yarn build",
+    "prepare": "yarn write"
   },
   "dependencies": {
     "glob": "^7.1.7",

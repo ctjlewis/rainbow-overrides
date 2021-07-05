@@ -1,7 +1,7 @@
 import glob from 'glob'
 import { promises as fs } from 'fs'
 import type { OverrideToken } from 'rainbow-token-list-test'
-import { defaultOverrides } from './data/default-overrides.js';
+import defaultOverrides from './data/default-overrides.json';
 
 export const getOverrides = async () => {
   const overrides: { [address: string]: OverrideToken } = {};
