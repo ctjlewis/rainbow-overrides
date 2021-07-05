@@ -1,6 +1,6 @@
 {
   "name": "rainbow-overrides",
-  "version": "1.7.0",
+  "version": "1.9.0",
   "type": "module",
   "module": "dist/rainbow-overrides.esm.js",
   "main": "dist/index.js",
@@ -28,7 +28,8 @@
   },
   "scripts": {
     "build": "tsdx build",
-    "write": "yarn build && node scripts/write.js"
+    "write": "yarn build && node scripts/write.js",
+    "postwrite": "yarn build"
   },
   "dependencies": {
     "glob": "^7.1.7",
