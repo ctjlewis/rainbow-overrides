@@ -2501,4 +2501,5 @@ var rainbowOverrides = {
 };
 
 export { rainbowOverrides as OFFLINE_TOKEN_OVERRIDES, defaultOverrides, getOverrides, write };
+export default {};
 //# sourceMappingURL=rainbow-overrides.mjs.map
