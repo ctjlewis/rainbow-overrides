@@ -1,6 +1,6 @@
 {
   "name": "rainbow-overrides",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "type": "module",
   "module": "dist/rainbow-overrides.esm.js",
   "main": "dist/index.js",
@@ -27,14 +27,15 @@
     "trailingComma": "es5"
   },
   "scripts": {
-    "build": "tsdx build",
-    "write": "yarn build && node scripts/write.js",
+    "build": "tsdx-esm build",
+    "write": "yarn build && node scripts/write.mjs",
     "postwrite": "yarn build",
     "prepare": "yarn write"
   },
   "dependencies": {
     "glob": "^7.1.7",
-    "rainbow-token-list-test": "^1.31.0",
+    "rainbow-token-list-test": "^1.41.7",
+    "tsdx-esm": "^0.14.4",
     "typescript": "^4.3.4"
   },
   "devDependencies": {
