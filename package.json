@@ -1,13 +1,16 @@
 {
   "name": "rainbow-overrides",
   "version": "1.10.0",
-  "typings": "dist/index.d.ts",
+  "typings": "./dist/index.d.ts",
   "module": "./dist/index.mjs",
   "exports": {
     "import": "./dist/index.mjs",
     "require": "./dist/index.cjs"
   },
-  "files": ["dist"],
+  "files": [
+    "dist",
+    "src"
+  ],
   "engines": {
     "node": ">=14"
   },
