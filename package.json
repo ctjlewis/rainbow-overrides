@@ -27,19 +27,17 @@
     "trailingComma": "es5"
   },
   "scripts": {
-    "build": "tsdx-esm build",
+    "build": "tsdx build",
     "write": "yarn build && node scripts/write.mjs",
     "postwrite": "yarn build",
     "prepare": "yarn write"
   },
   "dependencies": {
     "glob": "^7.1.7",
-    "rainbow-token-list-test": "^1.41.7",
-    "tsdx-esm": "^0.14.4",
     "typescript": "^4.3.4"
   },
   "devDependencies": {
     "@types/glob": "^7.1.3",
-    "tsdx": "^0.14.1"
+    "tsdx": "ctjlewis/tsdx"
   }
 }
