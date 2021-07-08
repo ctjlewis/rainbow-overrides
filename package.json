@@ -29,6 +29,8 @@
     "build": "tsdx build",
     "write": "yarn build && node scripts/write.mjs",
     "postwrite": "yarn build",
+    "test": "tsdx test",
+    "posttest": "node test/import.mjs && node test/require.cjs",
     "prepare": "yarn write"
   },
   "dependencies": {
