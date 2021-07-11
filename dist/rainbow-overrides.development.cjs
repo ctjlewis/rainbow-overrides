@@ -1197,7 +1197,7 @@ var rainbowOverrides = {
 	"0x6b175474e89094c44da98b954eedeac495271d0f": {
 	color: "#042069",
 	isCurated: true,
-	name: "[TEST-12345] Dai"
+	name: "[TEST-123] Dai"
 },
 	"0x543Ff227F64Aa17eA132Bf9886cAb5DB55DCAddf": {
 	color: "#25292E",
